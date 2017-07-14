@@ -1,0 +1,1 @@
+[06-Dec-2014 17:40:38 America/New_York] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' in /home/freakeng/public_html/youtube/parse/example/example_basic_selector.php on line 12

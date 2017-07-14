@@ -1,0 +1,7 @@
+DATA_ROOT_PATH		../Data/   # for training and testing on small data set
+GARG_ROOT_PATH		../Data/Gargs/      # Path of Gargs
+ADJ_NODE_LIMIT		50 # Node limit of adjacency graph
+SPATIAL_THRESHOLD	80 # spatial prefiltering threshold
+INFERENCE_ALG		0  # 0=Gibbs sampling, 1=LBP, 2=Meanfield, 3=EMD
+REPRESENTATION		0  # 0=bag-of-parts, 1=ARG
+NORMALIZATION		1  # 0: use min(N,M), 1: use sqrt(NM), 2: use N*M, 3: use max(N,M)
