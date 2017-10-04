@@ -23,9 +23,9 @@ ComputeBackBackgroundPara(0);  % parameters of negative hypothesis
 disp('Background parameters done !');
 
 % Start E-M process
-%dos('INDetector.exe -0 Parameters.txt');   % initialization
+dos('INDetector.exe -0 Parameters.txt');   % initialization
 
-for i=1:1,   % run 8 iteration
+for i=1:8,   % run 8 iteration
     
 % M step
    GargMstep1n(i);  % learn 1n parameters
@@ -35,7 +35,7 @@ for i=1:1,   % run 8 iteration
    end
    
 % E step
-   %dos('INDetector.exe -1 Parameters.txt');
+   dos('INDetector.exe -1 Parameters.txt');
     
    disp(sprintf('Run %d finished\r\n',i));
 end

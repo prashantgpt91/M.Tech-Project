@@ -16,7 +16,7 @@ TrainImgList = [GetRootPath 'Lists\training_pos.txt'];
 
 [TrainFiles1,TrainFiles2] = textread(TrainImgList,'%s%s%*[^\n]');
 TrainNum  = length(TrainFiles1);
-disp('working..')
+
 N = zeros(TrainNum,1);
 M = N;
 for i=1:TrainNum,

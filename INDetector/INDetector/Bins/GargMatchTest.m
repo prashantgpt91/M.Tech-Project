@@ -1,6 +1,6 @@
 % GargMatchTest
-%lambda=0.894
 % Test ARG matching
 
-[dummy,result] = dos('INDetector.exe -m Parameters.txt 19980220_ABC_003073 19980430_CNN_040778');
+[dummy,result] = dos('INDetector.exe -m Parameters.txt 19980503_ABC_002578 19980503_CNN_003418');
+
 disp(['match_result = ' result]);

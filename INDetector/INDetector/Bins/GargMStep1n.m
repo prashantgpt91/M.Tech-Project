@@ -31,9 +31,6 @@ x_sum = zeros(TrainNum,1);
 % DataWeights = [];
 for i=1:TrainNum,
     xs = load([GargXDir sprintf('xiu_%04d.txt',i-1)]);
-    if(size(xs)==0)
-        continue
-    end
     [row col] = size(xs);
     x_sum(i) = sum(xs(:,3))/row;
     xs = [ones(row,1)*(i-1) xs];
@@ -52,21 +49,16 @@ for j=1:row,
    Y1 = [Y1 ; FeatFile1{xs(j,1)+1}(xs(j,2)+1,:)];
    Y2 = [Y2 ; FeatFile2{xs(j,1)+1}(xs(j,3)+1,:)];
 end
-  
- size(Y1)
-        size(Y2)
-
-Y1 = Y1(:,2:(FeatDim-1));
-Y2 = Y2(:,2:(FeatDim-1));
+        
+Y1 = Y1(:,2:(FeatDim+1));
+Y2 = Y2(:,2:(FeatDim+1));
 
 weight = xs(:,4);
+BigW = ones(FeatDim,1)*weight';
 
-BigW = ones(FeatDim-2,1)*weight';
-size(BigW)
 Y1 = Y1';
 Y2 = Y2';
-        size(Y1)
-        size(Y2)
+        
 %  mean
 	numerator = ((Y2-Y1).*BigW)*(Y2-Y1)';
 	denomator = sum(weight);
