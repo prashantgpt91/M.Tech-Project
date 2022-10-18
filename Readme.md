@@ -4,4 +4,4 @@ Detecting Original & Duplicate Youtube Videos
 
 INDdetector code credits - [dqzhang](http://www.ee.columbia.edu/ln/dvmm/downloads/dvmmINDetector.html)
 
-[Presentation Link](https://github.com/prashantgpt91/M.Tech-Project/blob/master/presentation.pdf) | [Thesis Report ](https://github.com/prashantgpt91/M.Tech-Project/blob/master/report.pdf)
+[Presentation Link](https://github.com/prashantgpt91/M.Tech-Project/blob/master/presentation.pdf) | [Thesis Report ](https://github.com/prashantgpt91/M.Tech-Project/blob/master/Thesis%20report.pdf)
